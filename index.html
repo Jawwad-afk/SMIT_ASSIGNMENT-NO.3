@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No.3</title>
+    <meta name="description" content="This is my Assignment No.3 From SMIT">
+</head>
+<body>
+    <header>
+        <h1>REGISTRATION FORM EXAMPLE BY USING HTML ONLY</h1>
+        <nav>
+            <a href="#form">Form</a> |
+        </nav>
+    </header>
+    <main>
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="0" max="120"><br>
+                    Upload Your Image in .jpg: <input type="File" accept=".jpg" name="Personal Image"><br>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color"><br>
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website"><br>
+                    <label for="bio">Bio:</label><br>
+                    <textarea id="bio" name="bio" rows="2" cols="20"></textarea><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br>
+                    <label for="avatar">Upload Avatar:</label>
+                    <input type="file" id="avatar" name="avatar"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">--Select--</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                    </select><br>
+                    <label for="hobbies">Hobbies:</label><br>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="music" name="hobbies" value="music">
+                    <label for="music">Music</label><br>
+                    <label for="favtime">Favorite Time:</label>
+                    <input type="time" id="favtime" name="favtime"><br>
+                    <label for="favmonth">Favorite Month:</label>
+                    <input type="month" id="favmonth" name="favmonth"><br>
+                    <label for="favweek">Favorite Week:</label>
+                    <input type="week" id="favweek" name="favweek"><br>
+                    <label for="favrange">Favorite Range (1-10):</label>
+                    <input type="range" id="favrange" name="favrange" min="1" max="10"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Other Inputs</legend>
+                    <label for="search">Search:</label>
+                    <input type="search" id="search" name="search"><br>
+                    <label for="hidden">Hidden Field:</label>
+                    <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
+                    <label for="agree">I agree to terms:</label>
+                    <input type="checkbox" id="agree" name="agree"><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section><br><hr>
+        
+    <footer>
+        <p>&copy; 2025 registration form using html. <small>All rights reserved.</small></p>
+    </footer>
+</body>
+</html>
