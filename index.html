@@ -38,62 +38,77 @@
                     <textarea id="bio" name="bio" rows="2" cols="20"></textarea><br>
                 </fieldset>
                 <fieldset>
-                    <legend>Account Details</legend>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username"><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password"><br>
-                    <label for="avatar">Upload Avatar:</label>
-                    <input type="file" id="avatar" name="avatar"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Preferences</legend>
-                    <label>Gender:</label>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label><br>
-                    <label for="country">Country:</label>
-                    <select id="country" name="country">
-                        <option value="">--Select--</option>
-                        <option value="pakistan">Pakistan</option>
-                        <option value="usa">USA</option>
-                        <option value="uk">UK</option>
-                    </select><br>
-                    <label for="hobbies">Hobbies:</label><br>
-                    <input type="checkbox" id="reading" name="hobbies" value="reading">
-                    <label for="reading">Reading</label>
-                    <input type="checkbox" id="sports" name="hobbies" value="sports">
-                    <label for="sports">Sports</label>
-                    <input type="checkbox" id="music" name="hobbies" value="music">
-                    <label for="music">Music</label><br>
-                    <label for="favtime">Favorite Time:</label>
-                    <input type="time" id="favtime" name="favtime"><br>
-                    <label for="favmonth">Favorite Month:</label>
-                    <input type="month" id="favmonth" name="favmonth"><br>
-                    <label for="favweek">Favorite Week:</label>
-                    <input type="week" id="favweek" name="favweek"><br>
-                    <label for="favrange">Favorite Range (1-10):</label>
-                    <input type="range" id="favrange" name="favrange" min="1" max="10"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Other Inputs</legend>
-                    <label for="search">Search:</label>
-                    <input type="search" id="search" name="search"><br>
-                    <label for="hidden">Hidden Field:</label>
-                    <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
-                    <label for="agree">I agree to terms:</label>
-                    <input type="checkbox" id="agree" name="agree"><br>
-                </fieldset>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </form>
-        </section><br><hr>
-        
-    <footer>
-        <p>&copy; 2025 registration form using html. <small>All rights reserved.</small></p>
-    </footer>
-</body>
-</html>
+                    <section id="form">
+                        <h2>Quiz Form</h2>
+                        <form action="#" method="post">
+                            <fieldset>
+                                <legend>General Information</legend>
+                                <label for="student">Student Name:</label>
+                                <input type="text" id="student" name="student" required><br>
+                                <label for="roll">Roll Number:</label>
+                                <input type="number" id="roll" name="roll"><br>
+                                <label for="dob">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob"><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Quiz Questions</legend>
+                                <p>1. What does HTML stand for?</p>
+                                <input type="radio" id="q1a" name="q1" value="a">
+                                <label for="q1a">a) Hyper Text Markup Language</label><br>
+                                <input type="radio" id="q1b" name="q1" value="b">
+                                <label for="q1b">b) Home Tool Markup Language</label><br>
+                                <input type="radio" id="q1c" name="q1" value="c">
+                                <label for="q1c">c) Hyperlinks and Text Markup Language</label><br><br>
+
+                                <p>2. Which tag is used for inserting an image?</p>
+                                <input type="radio" id="q2a" name="q2" value="a">
+                                <label for="q2a">a) &lt;img&gt;</label><br>
+                                <input type="radio" id="q2b" name="q2" value="b">
+                                <label for="q2b">b) &lt;image&gt;</label><br>
+                                <input type="radio" id="q2c" name="q2" value="c">
+                                <label for="q2c">c) &lt;picture&gt;</label><br><br>
+
+                                <p>3. Select all block-level elements:</p>
+                                <input type="checkbox" id="q3a" name="q3" value="div">
+                                <label for="q3a">&lt;div&gt;</label>
+                                <input type="checkbox" id="q3b" name="q3" value="span">
+                                <label for="q3b">&lt;span&gt;</label>
+                                <input type="checkbox" id="q3c" name="q3" value="p">
+                                <label for="q3c">&lt;p&gt;</label><br><br>
+
+                                <label for="q4">4. Write a short note on &lt;form&gt; tag:</label><br>
+                                <textarea id="q4" name="q4" rows="3" cols="40"></textarea><br><br>
+
+                                <label for="q5">5. Choose your favorite HTML5 input type:</label>
+                                <select id="q5" name="q5">
+                                    <option value="text">Text</option>
+                                    <option value="email">Email</option>
+                                    <option value="date">Date</option>
+                                    <option value="color">Color</option>
+                                    <option value="range">Range</option>
+                                </select><br><br>
+
+                                <label for="q6">6. Upload your assignment file:</label>
+                                <input type="file" id="q6" name="assignment"><br><br>
+
+                                <label for="q7">7. Rate this quiz:</label>
+                                <input type="range" id="q7" name="rating" min="1" max="10"><br><br>
+
+                                <label for="q8">8. What time did you start this quiz?</label>
+                                <input type="time" id="q8" name="starttime"><br><br>
+
+                                <label for="q9">9. What is your favorite month?</label>
+                                <input type="month" id="q9" name="favmonth"><br><br>
+
+                                <label for="q10">10. Search for an HTML tag:</label>
+                                <input type="search" id="q10" name="searchtag"><br><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Declaration</legend>
+                                <input type="checkbox" id="declaration" name="declaration" required>
+                                <label for="declaration">I declare that the answers are my own work.</label>
+                            </fieldset>
+                            <input type="submit" value="Submit Quiz">
+                            <input type="reset" value="Reset">
+                        </form>
+                    </section>
